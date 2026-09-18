@@ -1,0 +1,49 @@
+product_sk,product_code,product_name,category_id,valid_from,valid_to,is_current
+1089,P100621,Catch Coriander Powder 500g,C06,2019-04-01,2024-05-31,False
+2213,P100621,Cadbury Chewing Gum 50g,C13,2024-06-01,9999-12-31,True
+1113,P100784,Bisleri Tea Leaf 500g,C03,2019-04-01,2024-05-31,False
+2205,P100784,Camlin A4 Paper Ream Pack of 5,C14,2024-06-01,9999-12-31,True
+1144,P101004,Johnson's Baby Powder Small,C09,2019-04-01,2024-05-31,False
+2208,P101004,Mother Dairy Cheese Slices 500g,C02,2024-06-01,9999-12-31,True
+1195,P101359,Himalaya Toothpaste 340ml,C07,2019-04-01,2024-05-31,False
+2206,P101359,Amul Choco Chewing Gum 50g,C13,2024-06-01,9999-12-31,True
+1292,P102042,Milky Mist Cheese Slices 200ml,C02,2019-04-01,2024-05-31,False
+2207,P102042,Pampers Diapers Medium,C09,2024-06-01,9999-12-31,True
+1313,P102184,Aashirvaad Whole Wheat Atta 10kg,C04,2019-04-01,2024-05-31,False
+2212,P102184,Surf Excel Floor Cleaner 500ml,C08,2024-06-01,9999-12-31,True
+1345,P102409,Catch Sambar Powder 50g,C06,2019-04-01,2024-05-31,False
+2209,P102409,Real Instant Coffee 500g,C03,2024-06-01,9999-12-31,True
+1365,P102549,Milky Mist Butter 500g,C02,2019-04-01,2024-05-31,False
+2223,P102549,Farm Fresh Carrot 1kg,C12,2024-06-01,9999-12-31,True
+1392,P102738,Johnson's Baby Soap Large,C09,2019-04-01,2024-05-31,False
+2203,P102738,McCain Ready Paratha 1kg,C10,2024-06-01,9999-12-31,True
+1407,P102845,Milky Mist Cheese Slices 500g,C02,2019-04-01,2024-05-31,False
+2220,P102845,Aachi Coriander Powder 50g,C06,2024-06-01,9999-12-31,True
+1419,P102931,Saffola Mustard Oil 2L,C05,2019-04-01,2024-05-31,False
+2201,P102931,Safal Tomato Loose,C12,2024-06-01,9999-12-31,True
+1588,P104112,McCain French Fries 200g,C10,2019-04-01,2024-05-31,False
+2214,P104112,Catch Chilli Powder 200g,C06,2024-06-01,9999-12-31,True
+1673,P104708,Paper Boat Tea Leaf 1L,C03,2019-04-01,2024-05-31,False
+2215,P104708,Mother Dairy Curd 500ml,C02,2024-06-01,9999-12-31,True
+1676,P104725,Amul Choco Milk Chocolate Pack of 10,C13,2019-04-01,2024-05-31,False
+2216,P104725,Dove Toothpaste 100g,C07,2024-06-01,9999-12-31,True
+1728,P105092,Bisleri Instant Coffee 2L,C03,2019-04-01,2024-05-31,False
+2211,P105092,Colgate Shampoo 340ml,C07,2024-06-01,9999-12-31,True
+1774,P105413,Huggies Diapers Small,C09,2019-04-01,2024-05-31,False
+2204,P105413,Nataraj Notebook Pack of 5,C14,2024-06-01,9999-12-31,True
+1795,P105562,ITC Master Chef Idli Batter 200g,C10,2019-04-01,2024-05-31,False
+2218,P105562,Vim Fabric Conditioner 500ml,C08,2024-06-01,9999-12-31,True
+1838,P105860,Safal Tomato Loose,C12,2019-04-01,2024-05-31,False
+2202,P105860,Sundrop Rice Bran Oil 2L,C05,2024-06-01,9999-12-31,True
+1859,P106009,Catch Sambar Powder 100g,C06,2019-04-01,2024-05-31,False
+2222,P106009,Camlin Notebook Pack of 5,C14,2024-06-01,9999-12-31,True
+1915,P106399,Mamypoko Diapers XL,C09,2019-04-01,2024-05-31,False
+2219,P106399,Modern Muffin 6 pc,C11,2024-06-01,9999-12-31,True
+2011,P107072,iD Fresh Idli Batter 1kg,C10,2019-04-01,2024-05-31,False
+2221,P107072,Farm Fresh Onion 1kg,C12,2024-06-01,9999-12-31,True
+2119,P107826,Cadbury Dark Chocolate 50g,C13,2019-04-01,2024-05-31,False
+2224,P107826,iD Fresh Ready Paratha 400g,C10,2024-06-01,9999-12-31,True
+2130,P107903,Himalaya Bathing Soap 75g,C07,2019-04-01,2024-05-31,False
+2210,P107903,Sunfeast Marie Gold 100g,C01,2024-06-01,9999-12-31,True
+2173,P108206,Daawat Poha 10kg,C04,2019-04-01,2024-05-31,False
+2217,P108206,Local Mandi Apple 1kg,C12,2024-06-01,9999-12-31,True

@@ -1,0 +1,4 @@
+run_number,raw_lines_scanned,duplicate_lines_pruned,clean_lines_retained,distinct_bills,total_revenue_inr,sha256_checksum,status
+1,1137585,16661,789516,165704,522865735.75,a27fbd1aa1dad89d8f0dcea9eae894790ee169fb63da0c81f4c3f36f4c5d5f94,PASS - Exact match
+2,1137585,16661,789516,165704,522865735.75,a27fbd1aa1dad89d8f0dcea9eae894790ee169fb63da0c81f4c3f36f4c5d5f94,PASS - Exact match
+3,1137585,16661,789516,165704,522865735.75,a27fbd1aa1dad89d8f0dcea9eae894790ee169fb63da0c81f4c3f36f4c5d5f94,PASS - Exact match

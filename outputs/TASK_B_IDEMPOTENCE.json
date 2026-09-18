@@ -1,0 +1,37 @@
+{
+  "task": "Task B - Idempotent Ingestion & Safe Re-run Proof",
+  "deduplication_granularity": "(bill_no, line_no)",
+  "runs": [
+    {
+      "run_number": 1,
+      "raw_lines_scanned": 1137585,
+      "duplicate_lines_pruned": 16661,
+      "clean_lines_retained": 789516,
+      "distinct_bills": 165704,
+      "total_revenue_inr": 522865735.75,
+      "sha256_checksum": "a27fbd1aa1dad89d8f0dcea9eae894790ee169fb63da0c81f4c3f36f4c5d5f94",
+      "status": "PASS - Exact match"
+    },
+    {
+      "run_number": 2,
+      "raw_lines_scanned": 1137585,
+      "duplicate_lines_pruned": 16661,
+      "clean_lines_retained": 789516,
+      "distinct_bills": 165704,
+      "total_revenue_inr": 522865735.75,
+      "sha256_checksum": "a27fbd1aa1dad89d8f0dcea9eae894790ee169fb63da0c81f4c3f36f4c5d5f94",
+      "status": "PASS - Exact match"
+    },
+    {
+      "run_number": 3,
+      "raw_lines_scanned": 1137585,
+      "duplicate_lines_pruned": 16661,
+      "clean_lines_retained": 789516,
+      "distinct_bills": 165704,
+      "total_revenue_inr": 522865735.75,
+      "sha256_checksum": "a27fbd1aa1dad89d8f0dcea9eae894790ee169fb63da0c81f4c3f36f4c5d5f94",
+      "status": "PASS - Exact match"
+    }
+  ],
+  "idempotence_proven": true
+}

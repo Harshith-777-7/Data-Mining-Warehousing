@@ -1,0 +1,7 @@
+line_type,line_count,subtotal_inr,revenue_treatment
+SALE,79295,58538816.55,YES (Counts as Revenue)
+TENDER,17550,0.0,NO (Non-Revenue / Bill Total / Tax)
+TAX,17550,0.0,NO (Non-Revenue / Bill Total / Tax)
+VOID,526,-381793.79,YES (Counts as Revenue)
+DISCOUNT,2439,-570249.25,YES (Counts as Revenue)
+RETURN,1647,-1227577.59,YES (Counts as Revenue)

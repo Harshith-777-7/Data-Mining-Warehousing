@@ -1,0 +1,23 @@
+{
+  "task": "Task A - Platform Standup & Partitioned Storage Layout",
+  "query": "Store S01, October 2024 Revenue",
+  "unpartitioned_flat_folder": {
+    "files_opened": 4457,
+    "bytes_scanned": 68706877,
+    "human_size": "65.52 MB"
+  },
+  "partitioned_s3_layout": {
+    "layout_format": "s3://annapurna-sales/fact_sales/store_id=<store_id>/year_month=<YYYY-MM>/data.parquet",
+    "files_opened": 1,
+    "bytes_scanned": 155719,
+    "human_size": "152.07 KB"
+  },
+  "empirical_improvements": {
+    "file_pruning_factor": 4457.0,
+    "io_byte_reduction_factor": 441.2
+  },
+  "result": {
+    "s01_october_revenue_inr": 6435443.95,
+    "s01_october_revenue_lines": 9564
+  }
+}

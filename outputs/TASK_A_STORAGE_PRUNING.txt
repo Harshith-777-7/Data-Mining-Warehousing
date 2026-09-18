@@ -1,0 +1,17 @@
+TASK A: STORAGE PRUNING EMPIRICAL MEASUREMENT REPORT
+================================================================================
+Target Query: Store S01 Revenue in October 2024
+S3 Hive Layout: s3://annapurna-sales/fact_sales/store_id=<store_id>/year_month=<YYYY-MM>/data.parquet
+
+1. Unpartitioned Flat Folder (Naive Scan):
+   - Total files scanned: 4,457 files
+   - Total bytes scanned: 68,706,877 bytes (~65.52 MB)
+
+2. Partitioned S3 Object Store Layout (DuckDB + MinIO):
+   - Objects opened: 1 Parquet file
+   - Bytes scanned: 155,719 bytes (152.07 KB)
+
+3. Measured Performance Gains:
+   - File Pruning Reduction: 4,457.0x fewer files opened
+   - I/O Bandwidth Reduction: 441.2x fewer bytes scanned over network
+   - S01 October 2024 Revenue: ₹6,435,443.95 (9,564 revenue lines)

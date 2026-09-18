@@ -1,0 +1,11 @@
+region,city,store_name,category_name,category_revenue_inr,units_sold
+South,Chennai,Annapurna T Nagar,Staples & Grains,1220174.16,1452.0
+South,Bengaluru,Annapurna Jayanagar,Staples & Grains,1211339.36,1466.0
+South,Chennai,Annapurna T Nagar,Baby Care,1111494.45,1348.0
+South,Bengaluru,Annapurna Jayanagar,Baby Care,1106941.04,1367.0
+South,Bengaluru,Annapurna Jayanagar,Edible Oils,1030266.99,1306.0
+South,Chennai,Annapurna T Nagar,Edible Oils,971631.57,1351.0
+South,Bengaluru,Annapurna Koramangala,Staples & Grains,958242.74,1150.0
+South,Hyderabad,Annapurna Kukatpally,Staples & Grains,935383.98,1112.0
+South,Bengaluru,Annapurna Koramangala,Baby Care,819303.54,1018.0
+South,Bengaluru,Annapurna Koramangala,Edible Oils,792269.35,1027.0

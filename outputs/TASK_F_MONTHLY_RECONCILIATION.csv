@@ -1,0 +1,13 @@
+month,pipeline_revenue_inr,finance_signed_off_inr,discrepancy_inr,status,closed_on,root_cause
+2024-01,38446071.33,38446071.33,0.0,MATCH,2024-02-09,Exact match to the paisa
+2024-02,34887085.55,34887085.55,0.0,MATCH,2024-03-11,Exact match to the paisa
+2024-03,41971649.09,42457899.09,-486250.0,DIFF,2024-04-09,A difference in how revenue is defined (Scope: Off-till wholesale invoice)
+2024-04,37958457.37,37958457.37,0.0,MATCH,2024-05-10,Exact match to the paisa
+2024-05,41764716.4,41764716.4,0.0,MATCH,2024-06-09,Exact match to the paisa
+2024-06,38987082.82,38987082.82,0.0,MATCH,2024-07-10,Exact match to the paisa
+2024-07,40295160.11,40527291.81,-232131.7,DIFF,2024-08-09,Something wrong with source data (Missing data: Pune S07 server crash 3 days)
+2024-08,45252181.75,45252181.75,0.0,MATCH,2024-09-09,Exact match to the paisa
+2024-09,44615037.46,44615037.46,0.0,MATCH,2024-10-10,Exact match to the paisa
+2024-10,56359195.92,56359195.92,0.0,MATCH,2024-11-09,Exact match to the paisa
+2024-11,51583838.47,51583838.47,0.0,MATCH,2024-12-10,Exact match to the paisa
+2024-12,50745259.48,50745209.0,50.48,DIFF,2025-01-09,A difference in how revenue is defined (Rounding: Bill-level rounding)
