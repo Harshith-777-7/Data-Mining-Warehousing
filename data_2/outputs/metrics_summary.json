@@ -1,0 +1,124 @@
+{
+  "project": "SetuBid Deduplication Engine (Question 2)",
+  "corpus_metrics": {
+    "total_notices": 12000,
+    "total_portals": 260,
+    "opportunities_ground_truth": 5776,
+    "true_duplicate_pairs": 15049,
+    "total_possible_pairs": 71994000,
+    "corpus_base_rate": 0.00020903130816456926,
+    "labeled_pairs_count": 900,
+    "labeled_pairs_positive_rate": 0.31
+  },
+  "constraints": {
+    "loss_asymmetry_ratio_C_FP_over_C_FN": 500,
+    "nightly_window_minutes": 20,
+    "card_id_stability": "Monotonic earliest-notice root assignment with append-only HTTP 301 redirect log"
+  },
+  "part_a_text_decomposition": {
+    "raw_char_5gram": {
+      "avg_shingles": 2956.0,
+      "same_mean": 0.695,
+      "diff_mean": 0.436,
+      "max_diff": 0.689,
+      "min_same": 0.257,
+      "best_f1": 0.7398
+    },
+    "raw_word_2gram": {
+      "avg_shingles": 582.5,
+      "same_mean": 0.658,
+      "diff_mean": 0.330,
+      "max_diff": 0.610,
+      "min_same": 0.211,
+      "best_f1": 0.7791
+    },
+    "processed_word_2gram": {
+      "avg_shingles": 479.7,
+      "same_mean": 0.799,
+      "diff_mean": 0.307,
+      "max_diff": 0.444,
+      "min_same": 0.283,
+      "best_f1": 0.9351
+    },
+    "processed_word_3gram": {
+      "avg_shingles": 540.8,
+      "same_mean": 0.784,
+      "diff_mean": 0.240,
+      "max_diff": 0.362,
+      "min_same": 0.260,
+      "best_f1": 0.9635
+    },
+    "specific_pair_separation": {
+      "same_pair_N010018_N010020": {
+        "raw_char5": 0.2972,
+        "processed_word3": 0.2951
+      },
+      "diff_pair_N007876_N008565": {
+        "raw_char5": 0.3896,
+        "processed_word3": 0.2710
+      },
+      "separation_raw_char5": -0.0924,
+      "separation_processed_word3": 0.0241
+    }
+  },
+  "part_b_minhash_sizing": {
+    "chosen_size_K": 128,
+    "size_bytes_per_notice": 512,
+    "full_corpus_memory_mb": 6.14,
+    "benchmarks": [
+      {"K": 16, "size_bytes": 64, "MAE": 0.0859, "RMSE": 0.1099, "TheoSE": 0.1027, "MaxErr": 0.4076},
+      {"K": 32, "size_bytes": 128, "MAE": 0.0727, "RMSE": 0.0932, "TheoSE": 0.0726, "MaxErr": 0.2877},
+      {"K": 64, "size_bytes": 256, "MAE": 0.0434, "RMSE": 0.0555, "TheoSE": 0.0514, "MaxErr": 0.2445},
+      {"K": 128, "size_bytes": 512, "MAE": 0.0297, "RMSE": 0.0383, "TheoSE": 0.0363, "MaxErr": 0.1350},
+      {"K": 256, "size_bytes": 1024, "MAE": 0.0177, "RMSE": 0.0230, "TheoSE": 0.0257, "MaxErr": 0.0698},
+      {"K": 512, "size_bytes": 2048, "MAE": 0.0142, "RMSE": 0.0179, "TheoSE": 0.0182, "MaxErr": 0.0560}
+    ]
+  },
+  "part_c_sublinear_retrieval": {
+    "lsh_bands_b": 16,
+    "lsh_rows_r": 8,
+    "inflection_threshold": 0.7071,
+    "asymmetry_decision_boundary": "tau >= 0.82 with exact estimated_value match"
+  },
+  "part_d_relational_database": {
+    "database_file": "setubid_lsh.db",
+    "total_lsh_rows": 192000,
+    "btree_indexed_search": {
+      "plan": "SEARCH lsh_buckets USING INDEX idx_band_bucket (band_id=? AND bucket_id=?)",
+      "rows_examined_per_query": "~18 tree levels + 1-5 leaf rows",
+      "latency_per_query_ms": 0.0058
+    },
+    "forced_unindexed_table_scan": {
+      "plan": "SCAN lsh_buckets",
+      "rows_examined_per_query": 192000,
+      "latency_per_query_ms": 6.299
+    },
+    "speedup_factor": 1084.1
+  },
+  "part_e_megabuckets_and_mitigation": {
+    "pathology_identified": "Band 25 mega-bucket (3,355 notices) caused by high-DF civil engineering phrases ('earthwork in', 'overhead service', 'money deposit', 'eligible to')",
+    "unmitigated_baseline": {
+      "total_candidates": 17428395,
+      "max_bucket_size": 3355,
+      "max_work_per_notice": 12281,
+      "recall_on_labeled_pairs": 0.9462,
+      "runtime_seconds": 10.20
+    },
+    "mitigation_bucket_cap_100": {
+      "total_candidates": 948149,
+      "max_work_per_notice": 577,
+      "recall_on_labeled_pairs": 0.9176,
+      "recall_cost": 0.0286,
+      "candidate_volume_reduction_factor": 18.38,
+      "runtime_seconds": 4.70
+    },
+    "mitigation_rebalance_b16_r8": {
+      "total_candidates": 76484,
+      "max_bucket_size": 158,
+      "max_work_per_notice": 275,
+      "recall_on_labeled_pairs": 0.7599,
+      "recall_cost": 0.1863,
+      "runtime_seconds": 4.29
+    }
+  }
+}
